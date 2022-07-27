@@ -1,0 +1,17 @@
+#message{
+
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  scrollbar-size:none;
+
+}
+#message::-webkit-scrollbar {
+  width: 0px;
+}
+app-post {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+
+}

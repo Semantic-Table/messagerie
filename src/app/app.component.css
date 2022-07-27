@@ -1,0 +1,53 @@
+
+
+#appli {
+  display: flex;
+  width: 100%;
+  height: 95%;
+  background-color: #36393FFF;
+}
+
+
+
+
+#global {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 4fr 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+app-user {
+  grid-area: 2 / 1 / 4 / 2;
+  background-color: #2F3136FF;
+  display: flex;
+  justify-content: center;
+
+}
+
+app-title {
+  background-color: #2F3136FF;
+  border-bottom: solid grey 1px;
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: center;
+}
+
+app-message {
+
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: #36393FFF;
+overflow: scroll;
+}
+app-message::-webkit-scrollbar {
+  width: 0px;
+}
+
+app-add-message {
+border-top: solid grey 1px;
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  justify-content: center;
+  background-color: #36393FFF;
+}

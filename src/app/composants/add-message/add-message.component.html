@@ -1,0 +1,21 @@
+<div id="addMessage">
+  <h3>Nouveau message</h3>
+  <form #formEnvoi="ngForm">
+  <div>
+    <label>De : </label>
+    <div>
+      <input type="text" id="pseudo" name="auteur" required ngModel>
+    </div>
+  </div>
+  <div>
+    <label>Message : </label>
+    <div>
+      <input type="text" id="message" name="texte" required ngModel>
+    </div>
+  </div>
+  <div id="inputPack">
+    <input type="submit" value="Valider" (click)="ajouterMessage(formEnvoi.value)">
+    <input type="button" value="Annuler">
+  </div>
+  </form>
+</div>
